@@ -1,0 +1,178 @@
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    background-color: rgba(223, 212, 212, 0.553);
+}
+/* ###################### Utility classes ########################## */
+
+
+
+
+/* ######################## navbar-container desktop mode######################## */
+
+
+
+
+/* ################# navbar-section Mobile version #################*/
+
+
+
+
+/* ################## hero-section  ###################*/
+
+
+
+
+/* ################### Event-section ##################*/
+
+
+
+
+/* ################## About Us ################### */
+.about-us{
+    width: 80vw;
+    height: 70vh;
+    /* border: 2px solid red; */
+    margin: 2em auto;
+}
+.about-img{
+    width: 65%;
+    height: 50%;
+    /* border: 2px solid green; */
+    border-radius: 20px;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    z-index: 1;
+
+}
+.about-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.about-content{
+    background-color: white;
+    border-radius: 8px;
+    width: 50%;
+    /* border: 2px solid black; */
+    height: 18%;
+    position: absolute;
+    top: 55%;
+    transform: translateY(-50%);
+    z-index: 2;
+  
+    text-overflow: ellipsis;
+}
+.about-content h1{
+    margin: 0.5em;
+    margin-bottom: 0.8em;
+    padding: 0.2em;
+    text-align: justify;
+   
+}
+
+
+/* #################### Team - section ############### */
+
+.team-section{
+    width: 60vw;
+    height: 60vh;
+    /* border: 5px dotted red; */
+    margin: 2rem auto;
+}
+.team-section h2{
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 1em;
+}
+.row1{
+    /* border:5px solid black ; */
+    height: 40%;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+}
+.row2{
+    /* border: 5px solid black ; */
+    height: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.col{
+    width: 15%;
+    height: 75%;
+    /* border: 2px solid blue; */
+    border-radius: 20%;
+    display: flex;
+    flex-shrink: 5;
+    justify-content: space-evenly;
+    transform: rotate(-20deg);
+    background-color: rgba(49, 15, 202, 0.856);
+    z-index: 1;
+    position: relative;
+}
+/* .col:hover{
+    transform: rotate(50deg);
+} */
+.col h3{
+    display: none;
+}
+.img-container{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 166, 0, 0);
+    /* background: url('./img/B612_20220509_131307_320.jpg'); */
+    /* border: 2px solid rgb(61, 31, 226); */
+    border-radius: 12%;
+    transform: rotate(20deg) translate(-8px,-15px) scale(1.1,1.1);   
+    transition: transform 0.5s ease-in-out;
+    z-index: 2;
+}
+.img-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12%;
+    transition: transform 0.5s ease-in-out;
+}
+.img-container:hover img{
+    /* background-color: red; */
+    /* transform: rotate(225deg); */
+    transform: translateY(-50px);
+    transform-origin: center;
+    transform: rotate(10deg) translate(-8px,-30px);
+   
+
+
+
+}
+.col .details p{
+position :absolute;
+color:white;
+transform: rotate(19deg)translate(30px,70px);
+
+
+}
+
+
+/* ################## contact-us ##################### */
+
+
+
+
+/* ################### Footer ######################## */
+
