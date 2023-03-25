@@ -4,8 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;800&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Matrix | The technical club</title>
 </head>
 <body>
   
@@ -56,9 +61,25 @@
    
     <!-- ########### Contact-us ############### -->
    
-    <div class="contact-us">
+    <section class="contact-us">
+        <h2 class="heading-secondary">
+            Contact Us
+        </h2>
+        <div class="contact-us__container">
+            <figure class="contact-us__img-container">
+                <img class="contact-us__img" src="./Raw-images/contact-us.svg" alt="contact-us">
+            </figure>
 
-    </div>
+            <form action="#" method="POST" class="contact-form">
+                <input name="name" id="name" type="text" class="text-input" placeholder="Your name" required>
+                <input name="email" id="email" type="email" class="text-input" placeholder="Email-ID" required>
+                <input name="phone" id="phone" type="tel" class="text-input" placeholder="Phone Number" required>
+                <input name="institution" id="institution type="text" class="text-input" placeholder="Institution" required>
+                <textarea name="message" id="message" class="text-area-input"  cols="30" rows="10" placeholder="Your Message Here ....."></textarea>
+                <button class="submit-btn" type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
     
     <!-- ############# Footer ################ -->
     <div class="footer">
