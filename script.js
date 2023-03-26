@@ -9,10 +9,7 @@ menu.addEventListener('click',()=>{
 
 
 
-<<<<<<< HEAD
-=======
 
->>>>>>> b422905f58fed31105fb61c00100bb624c96b177
 //collecting the form data and logging in the console
 
 //select the form element
