@@ -1,3 +1,15 @@
+//Hamburgur menu
+const ul=document.getElementById('ul')
+const menu=document.getElementById('toggle')
+menu.addEventListener('click',()=>{
+    ul.classList.toggle('ulnewclass')
+})
+
+
+
+
+
+
 //collecting the form data and logging in the console
 
 //select the form element
