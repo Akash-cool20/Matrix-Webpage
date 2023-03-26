@@ -323,16 +323,20 @@ top: -200px;
        border-radius: 20%;
        background-color: orange;
        transform: rotate(-20deg);
-       z-index: 1;
+       z-index: -1;
+       position: absolute;
+       top: 0;
+       box-shadow: 0 0 15px -8px;
    }
    .img-container{
        justify-items: center;
        justify-self:center ;
        align-self: center;
-       border-radius: 12%;
-       transform: rotate(20deg) translate(-12px,-12px) scale(1.1,1.1);   
+       border-radius: 12%; 
        transition: transform 0.5s ease-in-out;
-       z-index: 2;
+       width: 120px;
+       height: 120px;
+       position: relative;
    }
    .img-container img{
        /* border: 2px solid red; */
@@ -340,17 +344,11 @@ top: -200px;
        height: 120px;
        justify-self: center;
        align-self: center;
-       position: relative;
+       position: absolute;
+       z-index: 1;
        object-fit: cover;
        border-radius: 12%;
        transition: transform 0.3s ease-in-out;
-   }
-   .img-container:hover img{
-       /* background-color: red; */
-       /* transform: rotate(225deg); */
-       transform: translateY(-50px);
-       transform-origin: top-left;
-       transform: rotate(0deg) translate(-8px,-40px);
    }
    
    

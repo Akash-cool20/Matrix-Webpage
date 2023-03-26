@@ -1,20 +1,20 @@
 //cardCollection is the collection of all the cards, each card (I call it "parent") has two childs => [image, blank card behind image]
 
-let cardCollection = document.getElementsbyClassName('col');
-cardCollection.forEach(parent => {
-  let firstChild = parent.childNodes[0], secondChild = parent.childNodes[1];
-  firstChild.addEventListener("mouseover", e => {
-    //replace the actual class name
-    e.target.classList.add("fill_here....")
-  })
-  firstChild.addEventListener("mouseout", e => {
-    e.target.classList.remove("fill_here....")
-  })
+let cardCollection = document.getElementsByClassName('col');
+const hoverFunc = (parent) => {
   
-  secondChild.addEventListener("mouseover", e => {
-    e.target.classList.add("fill_here....")
+}
+for(parent in cardCollection) {  
+  let element1 = cardCollection[parent];
+  let firstChild = element1.querySelector('.img-container');
+  let secondChild = element1.querySelector('.team-details');
+
+  element1.addEventListener("mouseover", (e) => {
+    firstChild.classList.add("myHover-first");
+    secondChild.classList.add("myHover");
   })
-  secondChild.addEventListener("mouseout", e => {
-    e.target.classList.remove("fill_here....")
+  element1.addEventListener("mouseout", (e) => {
+    firstChild.classList.remove("myHover-first");
+    secondChild.classList.remove("myHover");
   })
-})
+}

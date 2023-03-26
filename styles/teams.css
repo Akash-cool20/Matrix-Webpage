@@ -1,0 +1,16 @@
+.myHover{
+    transform-origin: top right;
+    transform: rotate(-90deg) !important;
+    transition: 0.7s;
+    z-index: 10 !important;
+}
+.myHover-first {
+    z-index: 11 !important;
+}
+.team-section .team-details{
+    transform: rotate(5deg);
+    transform-origin: top right;
+}
+.team-section .col{
+    position: relative;
+}
