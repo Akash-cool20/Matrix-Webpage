@@ -58,6 +58,7 @@ body{
     width: 100%;
     height: 100%;
     border-radius: 20px;
+    object-fit: cover;
 }
 .about-content{
     background-color: white;
@@ -66,6 +67,7 @@ body{
     /* border: 2px solid black; */
     height: 18%;
     position: absolute;
+    overflow: hidden;
     top: 55%;
     transform: translateY(-50%);
     z-index: 2;
@@ -82,91 +84,94 @@ body{
 
 
 /* #################### Team - section ############### */
-
-.team-section{
-    width: 60vw;
-    height: 60vh;
-    /* border: 5px dotted red; */
-    margin: 2rem auto;
-}
-.team-section h2{
-    font-size: 3rem;
+.team-heading{
     text-align: center;
-    margin-bottom: 1em;
+    margin-top: 5rem;
+    
+    font-size: 5rem;
 }
-.row1{
-    /* border:5px solid black ; */
-    height: 40%;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    box-sizing: border-box;
-}
-.row2{
-    /* border: 5px solid black ; */
-    height: 40%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-bottom: 2rem;
-}
-.col{
-    width: 15%;
-    height: 75%;
-    /* border: 2px solid blue; */
-    border-radius: 20%;
-    display: flex;
-    flex-shrink: 5;
-    justify-content: space-evenly;
-    transform: rotate(-20deg);
-    background-color: rgba(49, 15, 202, 0.856);
-    z-index: 1;
-    position: relative;
-}
-/* .col:hover{
-    transform: rotate(50deg);
-} */
-.col h3{
-    display: none;
-}
-.img-container{
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 166, 0, 0);
-    /* background: url('./img/B612_20220509_131307_320.jpg'); */
-    /* border: 2px solid rgb(61, 31, 226); */
-    border-radius: 12%;
-    transform: rotate(20deg) translate(-8px,-15px) scale(1.1,1.1);   
-    transition: transform 0.5s ease-in-out;
-    z-index: 2;
-}
-.img-container img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 12%;
-    transition: transform 0.5s ease-in-out;
-}
-.img-container:hover img{
-    /* background-color: red; */
-    /* transform: rotate(225deg); */
-    transform: translateY(-50px);
-    transform-origin: center;
-    transform: rotate(10deg) translate(-8px,-30px);
+.team-section{
+    max-width: 60vw;
+    max-height: fit-content;
+    margin: 7rem auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows:repeat(2, 1fr);
+    row-gap: 7rem;
+    column-gap: 0px;
+    justify-content: center;
+    place-items: center;
+    /* border: 2px solid black; */
+
+    
+   }
+   .col{
+       /* border: 2px solid red; */
+       width: 120px;
+       height: 120px;
+       border-radius: 20%;
+       background-color: orange;
+       transform: rotate(-20deg);
+       z-index: 1;
+   }
+   .img-container{
+       justify-items: center;
+       justify-self:center ;
+       align-self: center;
+       border-radius: 12%;
+       transform: rotate(20deg) translate(-12px,-12px) scale(1.1,1.1);   
+       transition: transform 0.5s ease-in-out;
+       z-index: 2;
+   }
+   .img-container img{
+       /* border: 2px solid red; */
+       width: 120px;
+       height: 120px;
+       justify-self: center;
+       align-self: center;
+       position: relative;
+       object-fit: cover;
+       border-radius: 12%;
+       transition: transform 0.3s ease-in-out;
+   }
+   .img-container:hover img{
+       /* background-color: red; */
+       /* transform: rotate(225deg); */
+       transform: translateY(-50px);
+       transform-origin: center;
+       transform: rotate(0deg) translate(-8px,-30px);
+   }
    
-
-
-
-}
-.col .details p{
-position :absolute;
-color:white;
-transform: rotate(19deg)translate(30px,70px);
-
-
-}
+   
+   @media screen and (max-width:500px) {
+       .team-section{
+        row-gap: 80px;
+        column-gap: 15px;
+           grid-template-columns: repeat(2, 1fr);
+           grid-template-rows: repeat((4, 1fr));
+           max-height: fit-content;
+       }
+       
+   }
+   @media screen and (min-width:501px) and (max-width:768px){
+       .team-section{
+        row-gap: 80px;
+        column-gap: 15px;
+           max-height: fit-content;
+           grid-template-columns: repeat(2, 1fr);
+           grid-template-rows: repeat((4, 1fr));
+       }
+   }
+   @media screen and (min-width:769px) and (max-width:1057px){
+       .team-section{
+        row-gap: 80px;
+        column-gap: 15px;
+           max-height: fit-content;
+           
+           grid-template-columns: repeat(3,1fr);
+           grid-template-rows: repeat(3,1fr);
+       }
+   }
 
 
 /* ################## contact-us ##################### */
