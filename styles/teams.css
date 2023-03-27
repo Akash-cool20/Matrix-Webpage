@@ -1,8 +1,9 @@
 .myHover{
     transform-origin: top right;
-    transform: rotate(-90deg) !important;
-    transition: 0.7s;
+    transform: rotate(+1deg) translate(20px,20px) scale(1.1,1.1) !important;
+    transition: 0.4s;
     z-index: 10 !important;
+    
 }
 .myHover-first {
     z-index: 11 !important;
@@ -10,6 +11,24 @@
 .team-section .team-details{
     transform: rotate(5deg);
     transform-origin: top right;
+    /* display: show; */
+}
+.team-section .col{
+    position: relative;
+}.myHover{
+    transform-origin: top right;
+    transform: rotate(+1deg) translate(20px,10px) scale(1.1,1.1) !important;
+    transition: 0.4s;
+    z-index: 10 !important;
+    
+}
+.myHover-first {
+    z-index: 11 !important;
+}
+.team-section .team-details{
+    transform: rotate(5deg);
+    transform-origin: top right;
+    /* display: show; */
 }
 .team-section .col{
     position: relative;
