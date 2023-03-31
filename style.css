@@ -206,7 +206,7 @@ body{
   }
   .hero .sociallogo a{
     margin-right: 15px;
-    box-shadow: 0 0 10px rgb(39, 39, 39);
+    
     transition: 0.4s;
     z-index: 10;
   }
