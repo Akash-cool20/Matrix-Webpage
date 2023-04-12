@@ -63,8 +63,8 @@ body{
     margin:0 auto;
     box-shadow:0 5px 10px rgba(20, 20, 20, 0.286);
   }
-  header img{
-    width:200px;
+  header .navbar img{
+    width:140px;
   }
   header .navbar .navcontent ul{
     display: flex;
@@ -125,18 +125,20 @@ body{
   @media (max-width: 675px) {
     header .navbar{
       position:relative;
-      width:100vw;
+      
       box-shadow:none;
+      justify-content: space-between !important;
+      padding:0 30px 0 30px;
     }
     header .navbar ul {
         display: none;
         flex-direction:column !important;
-        justify-content: space-between !important;
+        justify-content: space-around !important;
         padding:15px !important;
         position: absolute;
         width: 100vw !important;
         height: 40vh;
-        top:70px;
+        top:60px;
         background-color:white ;
         left:0;
         z-index: -1;
@@ -160,6 +162,7 @@ body{
 .hero{
     max-width: 1200px;
     width:100vw;
+    
     display:flex;
     justify-content: space-around;
     align-items:center;
@@ -170,13 +173,16 @@ body{
   }
   .hero .clubname{
     width:40vw;
-    
+    display: flex;
+    flex-direction: column;
+    align-items: first baseline;
+    position: relative;
   }
   .hero .clubname h1{
-    font-size: 4rem;
+    
     font-weight: 800;
     color:white;
-    text-align: left;
+    
   }
   .hero .clubname p{
     letter-spacing: 3px;
@@ -188,6 +194,11 @@ body{
     padding:15px 0px;
     font-size: 12px;
     color:grey;
+  }
+  .hero .clubname .matrix{
+    width:200px;
+    height: auto;
+    
   }
   .hero .clubname img{
     width:40px;
@@ -230,6 +241,12 @@ body{
     }
     .hero .clubname{
       margin-top:-100px !important;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .hero .clubname p{
+      text-align: center !important;
     }
     .hero .anim{
       opacity:0.3;
@@ -662,7 +679,6 @@ top: -200px;
     justify-content: space-around;
     align-items: center;
     text-align: center;
-
 }
 
 .contact-us__img {
@@ -711,7 +727,14 @@ top: -200px;
     }
 
     .contact-form {
-        max-width: 100%;
+      padding:0 !important;
+        max-width: 80vw;
+        align-items: center;
+        justify-content: space-between;
+        margin:0 auto !important;
+    }
+    .contact-form input, .contact-form textarea{
+      width:70vw;
     }
 
 }
