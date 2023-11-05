@@ -1,0 +1,14 @@
+{
+  "name": "matrix-webpage",
+  "version": "1.0.0",
+  "description": "this link will redirect you to the page of matrix  https://akash-cool20.github.io/Matrix-Webpage/",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
